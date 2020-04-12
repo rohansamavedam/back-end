@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const connectionURL = 'mongodb+srv://spartanbooks:spartanbooks@cluster0-el8x1.mongodb.net/test'
+const connectionURL = process.env.MONGO_URL
 
 mongoose.connect(connectionURL, {
     useNewUrlParser: true,
